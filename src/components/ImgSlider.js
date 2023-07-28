@@ -16,21 +16,25 @@ const ImgSlider = (props) => {
     <Carousel {...settings}>
       <Wrap>
         <a>
+          <img class='slide-title' src='images/burrow.png' alt='Burrow' />
           <img src='/images/slider-badging.jpg' alt="Rabit Movie"/>
         </a>
       </Wrap>
       <Wrap>
         <a>
+          <img class='slide-title' src='images/wanda-vision.png' alt='Wanda Vision' />
           <img src='/images/slider-scale.jpg' alt="Wanda Vision"/>
         </a>
       </Wrap>
       <Wrap>
         <a>
+          <img class='slide-title' src='images/onward.png' alt='Onward' />
           <img src='/images/slider-badag.jpg' alt="Onward"/>
         </a>
       </Wrap>
       <Wrap>
         <a>
+          <img class='slide-title' src='images/wanda-2.png' alt='Avengers Assembled' />
           <img src='/images/slider-scales.jpg' alt="Wanda Vision 2"/>
         </a>
       </Wrap>
@@ -40,6 +44,33 @@ const ImgSlider = (props) => {
 
 const Carousel = styled(Slider)`
   margin-top: 20px;
+
+  .slick-slide > div {
+  margin: 0 5px;
+  }
+
+  .slick-list {
+    margin: 0 -5px;
+  }
+
+  .slide-title {
+    box-shadow: none;
+    width: 30%;
+    height: auto;
+    position: absolute;
+    margin-left: 6%;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: transform 700ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 150ms;
+  }
+
+  .slick-active .slide-title {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: transform 700ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 150ms, opacity 700ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 150ms;
+  }
+
 
   & > button {
     opacity: 0;
@@ -90,15 +121,17 @@ const Wrap = styled.div`
     padding: 4px;
 
     img {
-      border-radius: 4px;
+      border-radius: 6px;
       width: 100%;
       height: 100%;
+      box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, 
+      rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
     }
 
     &:hover {
       padding: 0;
       border-radius: 4px;
-      border: 4px solid rgba(249, 249, 249, 0.8);
+      outline: 4px solid rgba(249, 249, 249, 0.8);
       transition-duration: 300ms;
 
     }
