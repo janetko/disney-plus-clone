@@ -46,7 +46,8 @@ const Container = styled.div`
   grid-template-columns: repeat(5, minmax(0, 1fr));
 
   @media (max-width: 768px) {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 300px));
+    justify-content: center;
   }
 `;
 
@@ -59,7 +60,6 @@ const Wrap = styled.div`
   overflow: hidden;
   position: relative;
   transition: all 250ms cubic-bezier(0.25 0.46 0.45 0.94) 0s;
-  /* border: 3px solid rgba(249, 249, 249, 0.0); */
   background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42));;
 
   img {

@@ -16,26 +16,38 @@ const ImgSlider = (props) => {
     <Carousel {...settings}>
       <Wrap>
         <a>
-          <img class='slide-title' src='images/burrow.png' alt='Burrow' />
+          <img class='slide-title' src='images/title-burrow.png' alt='Burrow' />
           <img src='/images/slider-badging.jpg' alt="Rabit Movie"/>
         </a>
       </Wrap>
       <Wrap>
         <a>
-          <img class='slide-title' src='images/wanda-vision.png' alt='Wanda Vision' />
+          <img class='slide-title' src='images/title-wandaVision.png' alt='Wanda Vision' />
           <img src='/images/slider-scale.jpg' alt="Wanda Vision"/>
         </a>
       </Wrap>
       <Wrap>
         <a>
-          <img class='slide-title' src='images/onward.png' alt='Onward' />
+          <img class='slide-title' src='images/title-onward.png' alt='Onward' />
           <img src='/images/slider-badag.jpg' alt="Onward"/>
         </a>
       </Wrap>
       <Wrap>
         <a>
-          <img class='slide-title' src='images/wanda-2.png' alt='Avengers Assembled' />
-          <img src='/images/slider-scales.jpg' alt="Wanda Vision 2"/>
+          <img class='slide-title' src='images/title-wandaAssembled.png' alt='Avengers Assembled' />
+          <img src='/images/slider-scales.jpg' alt="WandaVision Assembled"/>
+        </a>
+      </Wrap>
+      <Wrap>
+        <a>
+          <img class='slide-title' src='images/title-ravensHome.png' alt='Avengers Assembled' />
+          <img src='/images/slider-ravensHome.jpeg' alt="Ravens Home"/>
+        </a>
+      </Wrap>
+      <Wrap>
+        <a>
+          <img class='slide-title' src='images/title-avatar2.png' alt='Avengers Assembled' />
+          <img src='/images/slider-avatar2.jpeg' alt="Avatar 2"/>
         </a>
       </Wrap>
     </Carousel>
