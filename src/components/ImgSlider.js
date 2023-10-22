@@ -87,8 +87,16 @@ const Carousel = styled(Slider)`
   & > button {
     opacity: 0;
     height: 100%;
-    width: 5vw;
+    margin: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 10vw;
+    /* width: 15vw; */
     z-index: 1;
+
+  @media (max-width: 768px) {
+    width: 20vw;
+  }
 
     &:hover {
       opacity: 1;

@@ -153,6 +153,7 @@ const NavMenu = styled.div`
       min-width: 20px;
       width: 20px;
       z-index: auto;
+      margin-right: 10px;
     }
 
     span {
